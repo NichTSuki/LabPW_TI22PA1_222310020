@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3 no 2 (JS)</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <h1>Form Tiket Bus</h1>
+
+    <table style="border-collapse: collapse;"; border="1">
+        <tr>
+            <td></td>
+            <td style="background-color: grey; font-weight: bold; text-align: center;">Eksekutif</td>
+            <td style="background-color: grey; font-weight: bold; text-align: center; width: 60px;">Bisnis</td>
+            <td style="background-color: grey; font-weight: bold; text-align: center;">Ekonomi</td>
+        </tr>
+        <tr>
+            <td style="background-color: grey; font-weight: bold; text-align: center;">Jakarta</td>
+            <td style="text-align: center;">70000</td>
+            <td style="text-align: center;">40000</td>
+            <td style="text-align: center;">10000</td>
+        </tr>
+        <tr>
+            <td style="background-color: grey; font-weight: bold; text-align: center;">Solo</td>
+            <td style="text-align: center;">80000</td>
+            <td style="text-align: center;">50000</td>
+            <td style="text-align: center;">20000</td>
+        </tr>
+        <tr>
+            <td style="background-color: grey; font-weight: bold; text-align: center;">Surabaya</td>
+            <td style="text-align: center;">90000</td>
+            <td style="text-align: center;">60000</td>
+            <td style="text-align: center;">30000</td>
+        </tr>
+    </table>
+
+    <form>
+        <label for="nama">Nama</label><br>
+        <input type="text" name="nama" id="nama"/><br>
+
+        <label for="tujuan">Tujuan</label><br>
+        <select id="tujuan" name="tujuan">
+            <option value="Jakarta" id="jakarta">Jakarta</option>
+            <option value="Solo" id="solo">Solo</option>
+            <option value="Surabaya" id="surabaya">Surabaya</option>
+        </select><br>
+
+        <label for="kelas">Kelas</label><br>
+        <select id="kelas" name="kelas">
+            <option value="Eksekutif" id="eksekutif">Eksekutif</option>
+            <option value="Bisnis" id="bisnis">Bisnis</option>
+            <option value="Ekonomi" id="ekonomi">Ekonomi</option>
+        </select><br>
+
+        <label for="qty">Banyak Tiket</label><br>
+        <input type="number" name="qty" id="qty"/><br>
+
+        <label for="status">Status</label><br>
+        <input type="radio" name="status" value="Member">Member
+        <input type="radio" name="status" Value="Bukan Member">Bukan Member
+    </form>
+</body>
+    <div><br>
+        <button style="margin-right: 50px;" type="submit" value="kirim" onclick="tekan()">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+</html>
