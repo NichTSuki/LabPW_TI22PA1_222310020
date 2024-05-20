@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3 no 1 (JS)</title>
+</head>
+<body>
+    <h1>FORM MAHASISWA</h1>
+    <script src="script.js"></script>
+
+    <form action="" name="fform">
+        <div>
+            <label for="nim">NIM:</label><br>
+            <input required type="text" name="nim" id="nim"/><br>
+
+            <label for="nama">Nama:</label><br>
+            <input required minlength="5" type="text" name="nama" id="nama"/><br>
+
+            <label for="gender">Jenis Kelamin:</label><br>
+            <input type="radio" name="jenis_kelamin" id="laki-laki" value="Laki-laki">Laki - laki<br>
+            <input type="radio" name="jenis_kelamin" id="perempuan" value="Perempuan">Perempuan<br>
+
+            <label for="religion">Agama:</label><br>
+            <input type="radio" name="religion" value="Kristen">Kristen<br>
+            <input type="radio" name="religion" value="Katolik">Katolik<br>
+            <input type="radio" name="religion" value="Islam">Islam<br>
+            <input type="radio" name="religion" value="Hindu">Hindu<br>
+            <input type="radio" name="religion" value="Budha">Budha<br>
+
+            <label for="status">Status:</label><br>
+            <input type="radio" name="status" value="Aktif">Aktif<br>
+            <input type="radio" name="status" value="Tidak Aktif">Tidak Aktif<br>
+
+            <label for="jurusan">Jurusan:</label><br>
+            <input type="text" name="jurusan" id="jurusan"/><br>
+
+            <label for="comment">Komentar:</label><br>
+            <input type="text" name="comment" id="comment"/>
+        </div>
+        <div><br>
+            <button style="margin-right: 68px;" type="submit" value="kirim" onclick="tekan()">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+</body>
+</html>
