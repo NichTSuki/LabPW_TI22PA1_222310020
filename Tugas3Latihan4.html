@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3 no 4 (JS)</title>
+    <style>
+        form>div {
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Program Hitung Saldo Tabungan</h1>
+
+    <form name="form">
+        <div>
+            <label for="saldo">Saldo Awal :</label>
+            <input type="number" name="saldo" id="saldo">
+        </div>
+        <div>
+            <label for="bunga">Bunga :</label>
+            <input type="number" name="bunga" id="bunga">
+        </div>
+        <div>
+            <label for="waktu">Waktu (Bulan) :</label>
+            <input type="number" name="waktu" id="waktu">
+        </div>
+        <div>
+            <button onclick="calculate()">Submit</button>
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+    <p id="result"></p>
+    <script>
+        const countSaldo = (saldo, bunga, waktu) => {
+            let nilaiBunga;
+            let message = '';
+            for (let i = waktu; i > 0; i--) {
+                nilaiBunga = saldo * (bunga / 100);
+                saldo += nilaiBunga;
+                message += `Saldo Bulan ke - ${waktu - i + 1} = ${saldo.toFixed(2)}<br>`;
+            }
+            return message;
+        };
+
+        const calculate = () => {
+            const saldo = parseFloat(document.getElementById('saldo').value);
+            const bunga = parseFloat(document.getElementById('bunga').value);
+            const waktu = parseInt(document.getElementById('waktu').value);
+            document.getElementById('result').innerHTML = countSaldo(saldo, bunga, waktu);
+        };
+    </script>
+</body>
+
+</html>
