@@ -1,0 +1,78 @@
+.subtitle {
+    font-size: 18px;
+}
+#atom{
+    width: 250px; height: 150px;
+    position: relative;
+    left: 13%;
+    right: 87%;
+}
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 10px; 
+}
+
+p4{
+    text-decoration: underline;
+    font-weight: bold;
+}
+#Pertanyaan{
+    font-weight: bold;
+}
+#line1{
+    background-color: aqua;
+}
+#line1-2{
+    background-color: aqua;
+}
+#line2-3{
+    background-color: green;
+}
+#massa-atom{
+    background-color: purple ;
+    font-family: cursive;
+}
+#massa_atom{
+    color: grey;
+    font-family:cursive;
+}
+p6{
+    font-weight: bold;
+    text-decoration: underline;
+}
+#x{
+    font-weight: bold;
+}
+#a{
+    color: red;
+    font-weight: bold;
+}
+#b{
+    color:green;
+    font-weight: bold;
+}
+#c{
+    color: yellow;
+    font-weight: bold;
+}
+p11{
+    font-weight: bold;
+}
+#wa{
+    width: 60px;
+    height: 60px;
+}
+#fb{
+    width: 60px;
+    height: 60px;
+}
+#twitter{
+    width: 80px;
+    height: 80px;
+}
+table{
+    text-align: center;
+}
+#lambang_atom{
+    width: 70px; height: 70px;
+}
