@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse:collapse;
+            margin:1rem;
+        }
+        tr,td,th{
+            padding:6px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script src="script.js"></script>
+
+    <form name=faktorial>
+        <table>
+            <tr>
+                <th colspan="2">PERHITUNGAN<br>
+                                FAKTORIAL dan DERET</th>
+            </tr>
+            <tr>
+                <td>N</td>
+                <td>
+                    <input type="number" name="n" id="n">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Hasil</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Faktorial</td>
+                <td></td>
+                <td><button type="submit" onclick="tekan()" id="factorial">Submit</button>
+                    <button type="reset">Reset</button></td>
+            </tr>
+            <tr>
+                <td>Jumlah</td>
+                <td id="factorialResult"></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
