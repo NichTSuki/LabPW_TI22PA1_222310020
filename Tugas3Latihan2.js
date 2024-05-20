@@ -28,12 +28,12 @@ function tekan(){
     }
 
     const stats = document.getElementsByName("status");
-    let status = "" ;
+    let status = "";
     for(const stat of stats){
         if(stat.checked){
             status = stat.value;
+            break;
         }
-        break;
     }
 
     var totalHarga = qty * harga;
